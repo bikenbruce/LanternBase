@@ -15,7 +15,9 @@ uint8_t POLE;
 Scheduler runner;
 
 void t1Callback() {
-  sendXbeeHello(10);
+  //sendXbeeHello(10);
+  Serial.println('call t1');
+  
 }
 
 void t2Callback() {
