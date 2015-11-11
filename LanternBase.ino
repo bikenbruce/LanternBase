@@ -30,7 +30,7 @@ Task t2(5,    -1, &t2Callback);
 void setup() {
   //setup logging
   Serial.begin(115200);
-  Serial.println("SETUP Start");
+  Serial.println("Setup");
 
   POLE = EEPROM.read(0);
   
