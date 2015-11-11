@@ -12,21 +12,18 @@
 
 int POLE;
 
-Task t1(1000, -1, &t1Callback);
-Task t2(5,  -1, &t2Callback);
-
 Scheduler runner;
 
 void t1Callback() {
   sendXbeeHello(10);
-
-
 }
 
 void t2Callback() {
   readXbee();
-
 }
+
+Task t1(1000, -1, &t1Callback);
+Task t2(5,    -1, &t2Callback);
 
 void setup() {
   //setup logging
