@@ -25,6 +25,8 @@ void t2Callback() {
 Task t1(1000, -1, &t1Callback);
 Task t2(5,    -1, &t2Callback);
 
+// Test messages
+
 void setup() {
   //setup logging
   Serial.begin(115200);
