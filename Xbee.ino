@@ -12,7 +12,7 @@ void setupXbee() {
   xbee.setSerial(Serial);
 
   pole[0].address = XBeeAddress64(0x00000000, 0x0000ffff);  // broadcast
-  pole[1].address = XBeeAddress64(0x0013a200, 0x408d9e0e);  // pole 1
+  pole[1].address = XBeeAddress64(0x0013a200, 0x408d9e0e);  // pole 1, corodinator
   pole[2].address = XBeeAddress64(0x0013a200, 0x409140b6);  // pole 2
   pole[3].address = XBeeAddress64(0x0013a200, 0x40914018);  // pole 3
   pole[4].address = XBeeAddress64(0x0013a200, 0x408d9e5f);  // pole 4
