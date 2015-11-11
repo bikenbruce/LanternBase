@@ -26,6 +26,7 @@ Task t1(1000, -1, &t1Callback);
 Task t2(5,    -1, &t2Callback);
 
 // Test messages
+//Steve addition
 
 void setup() {
   //setup logging
