@@ -10,7 +10,7 @@
 #include "_rgb.h"
 #include "_comm.h"
 
-int POLE;
+uint8_t POLE;
 
 Scheduler runner;
 

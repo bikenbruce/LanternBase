@@ -34,19 +34,19 @@ void sendXbeeHello(int poleDestination) {
   sendXbee(msgToPole, poleDestination);
 }
 
-void sendXbeeHelloReply(int poleDestination, int status) {
+void sendXbeeHelloReply(int poleDestination, uint8_t status) {
   uint8_t message[] = {1, POLE, status};
   ZBTxRequest msgToPole = ZBTxRequest(pole[poleDestination].address, message, sizeof(message));
   sendXbee(msgToPole, poleDestination);
 }
 
-void sendXbeePushButtonEvent(int poleDestination, int velocity) {
+void sendXbeePushButtonEvent(int poleDestination, uint8_t velocity) {
   uint8_t message[] = {13, POLE, velocity};
   ZBTxRequest msgToPole = ZBTxRequest(pole[poleDestination].address, message, sizeof(message));
   sendXbee(msgToPole, poleDestination);
 }
 
-void sendXbeeButtonOnEvent(int poleDestination, int velocity) {
+void sendXbeeButtonOnEvent(int poleDestination, uint8_t velocity) {
   uint8_t message[] = {16, POLE, velocity};
   ZBTxRequest msgToPole = ZBTxRequest(pole[poleDestination].address, message, sizeof(message));
   sendXbee(msgToPole, poleDestination);
