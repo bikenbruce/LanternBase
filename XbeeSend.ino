@@ -60,7 +60,6 @@ void sendXbeeSingleColor(int poleDestination, RGB color) {
 }
 
 
-
 void sendXbee(ZBTxRequest msgToPole, int poleDestination) {
   xbee.send(msgToPole);
   Serial.print("Message sent to pole ");

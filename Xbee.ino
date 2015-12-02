@@ -5,8 +5,6 @@ PoleComm pole[12];
 ZBTxStatusResponse txStatus = ZBTxStatusResponse();
 ZBRxResponse rx = ZBRxResponse();
 
-int dataNum;
-
 void setupXbee() {
   Serial3.begin(57600);
   xbee.setSerial(Serial);

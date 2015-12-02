@@ -14,7 +14,7 @@
 
 uint8_t POLE;
 boolean wakestate = true;
-boolean testbed = false;
+boolean testbed  = false;
 byte boards = 10;
 
 //////////////////// LANTERN PIN I/O & VAR START UP CODE
@@ -32,7 +32,7 @@ int ledBuf[10][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 
 ///////////// SineWave Led player ///////////////
 //       direction,channel,yspacing,amplitude, width,period,brd
 LantSine rsine(false, 0, 10, 170, 180, 100, boards);
-LantSine gsine(false, 1, 10, 60, 120, 100, boards);
+LantSine gsine(false, 1, 10, 60,  120, 100, boards);
 LantSine bsine(false, 2, 70, 20, 2800, 500, boards);
 
 //////////////////// NEOPIXEL TESTBED Startup Code
@@ -61,8 +61,6 @@ void setup() {
   Serial.print("I am pole ");
   Serial.println(POLE);
   
-  // setupDMX();
-  //simpleTest();
   setupXbee();
 
   t1.enable();
